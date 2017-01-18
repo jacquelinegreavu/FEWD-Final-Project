@@ -7,19 +7,19 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-       	<link href="https://fonts.googleapis.com/css?family= Dancing+Script:700|Playfair+Display|Raleway:100i,200,300,400,500,500i,700|Satisfy" rel="stylesheet">
-        <script src="js/jquery-2.1.3.js"></script>
+       	<link href="https://fonts.googleapis.com/css?family= Dancing+Script:700|Playfair+Display|Raleway:100i,200,300,400,500,500i,700|Satisfy|Lato:300,400" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
 	<body>
 	 <!-- Nav Bar -->
         <header>
         <div class="clearfix">
         <nav class="navbar">
-            <a href="index.html">HOME</a>/
-            <a href="aboutme.html">ABOUT</a>/
-            <a href="health.html">HEALTH</a>/
-            <a href="travel.html">TRAVEL</a>/
-            <a class="here" href="lifestyle.html">LIFESTYLE</a>/
+            <a href="index.html">HOME</a> /
+            <a href="aboutme.html">ABOUT</a> /
+            <a href="health.html">HEALTH</a> /
+            <a href="travel.html">TRAVEL</a> /
+            <a class="here" href="lifestyle.html">LIFESTYLE</a> /
             <a href="contact.html">CONTACT</a>
         </nav>
     	</header>
@@ -28,39 +28,55 @@
         <h1>jacqueline denise</h1>
 		
      <!--Page Content-->
+     <section>	
      	<h3>ROAMING AROUND ROME</h3>
         <h4>November 17, 2016</h4>
         <img src="img/roamingrome.jpg" alt="Roaming Rome">  
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, sapien a sollicitudin placerat, diam mauris sodales nulla, in convallis velit ipsum ut quam. Ut sollicitudin mi eget metus scelerisque, ac blandit mi vestibulum. Mauris at elit vel purus vestibulum varius. Aenean nec eleifend risus. Phasellus blandit ante lorem, id eleifend diam consectetur quis. Aenean ut tristique eros. Duis nisi sapien, pharetra ac mauris vel, placerat condimentum felis. Sed enim turpis, fringilla eget eleifend ac, pulvinar nec erat.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, sapien a sollicitudin placerat, diam mauris sodales nulla, in convallis velit ipsum ut quam. Ut sollicitudin mi eget metus scelerisque, ac blandit mi vestibulum. Mauris at elit vel purus vestibulum varius. Aenean nec eleifend risus. Phasellus blandit ante lorem, id eleifend diam consectetur quis. Aenean ut tristique eros. Duis nisi sapien, pharetra ac mauris vel, placerat condimentum felis. Sed enim turpis, fringilla eget eleifend ac, pulvinar nec erat.</p>
 
-            Integer hendrerit libero nibh, vitae sagittis ante commodo eu. Vivamus tincidunt quam vehicula nibh semper imperdiet. Proin lobortis nunc quam, eget tristique diam hendrerit eu. Fusce aliquet eu leo eget maximus. Nulla dapibus risus id euismod pretium. Donec feugiat libero nec elit hendrerit, quis vehicula ante pulvinar. Proin eu est non nisl lobortis accumsan ut vel dolor. Donec ornare accumsan augue, vitae tincidunt elit lacinia quis. Proin facilisis lorem vel sem pharetra tristique. Morbi dui orci, posuere nec molestie a, bibendum quis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse libero dolor, interdum ut imperdiet quis, lacinia et tellus. Suspendisse sit amet venenatis eros.</p>
+            <p>Integer hendrerit libero nibh, vitae sagittis ante commodo eu. Vivamus tincidunt quam vehicula nibh semper imperdiet. Proin lobortis nunc quam, eget tristique diam hendrerit eu. Fusce aliquet eu leo eget maximus. Nulla dapibus risus id euismod pretium. Donec feugiat libero nec elit hendrerit, quis vehicula ante pulvinar. Proin eu est non nisl lobortis accumsan ut vel dolor. Donec ornare accumsan augue, vitae tincidunt elit lacinia quis. Proin facilisis lorem vel sem pharetra tristique. Morbi dui orci, posuere nec molestie a, bibendum quis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse libero dolor, interdum ut imperdiet quis, lacinia et tellus. Suspendisse sit amet venenatis eros.</p>
 
-        <hr></hr>
-       
+     </section>  
 
      
      <!--Sidebar Content-->
-  <aside>
-  	<div class="clearfix">
-     <img src="img/meetjacqueline.jpg" alt="Meet Jacqueline"> 
-     <h6>meet jacqueline</h6>
-     <hr></hr>
-     <h5>CONNECT</h5>
-	     <a href="www.instagram.com"><img src="instagramlogo.png" alt="Instagram Logo" /></a>
-	     <a href="www.pinterest.com"><img src="pinterestlogo.png" alt="Pinterest Logo" /></a>
-	     <a href="www.email.com"><img src="emaillogo.png" alt="Email Logo" /></a>
-     <hr></hr>
-  </aside>
+  	<div id="sidebar-container" class="clearfix">
+  		<aside>
+	     <img src="img/meetjacqueline.jpg" alt="Meet Jacqueline"> 
+	     <h6>meet jacqueline</h6>
+	     <hr></hr>
+	     <!-- <div class="connect"> -->
+	     <h5>CONNECT</h5>
+	     <div class="connect">
+		     <section class="connect-row">
+			     	<a href="https://www.instagram.com/jacqueline.denise/?hl=en">
+			     	<img class="contact-button" src="img/instagram_logo.png" alt="Instagram Logo" />
+			     </a>
+			     <a href="https://www.pinterest.com/jacgreavu/">
+			     	<img class="contact-button" src="img/pinterest_logo.png" alt="Pinterest Logo" />
+			     </a>
+			     <a href="mailto:jacqueline.greavu@gmail.com">
+			     	<img class="contact-button" src="img/email_logo.png" alt="Email Logo" /></a>
+			     <a href="url">
+			     	<img class="contact-button" src="img/other_logo.png" alt="Other Logo" />
+			     </a>
+		     </section>
+		 </div>
+		 <hr></hr>
+	     </aside>
+	</div>
 
 
-     <!--Footer-->
-	<footer>
+	<!--Footer-->
+	<footer class="clear">
             <blockquote>COPYRIGHT © JACQUELINE DENISE GREAVU</blockquote>
     </footer>  
 
     <!--Instagram Feed-->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+	<iframe src="https://snapwidget.com/embed/312509" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 
-			<script src="js/jquery-1.11.2.min.js"></script>
+			<script src="js/vendor/jquery-1.11.2.min.js"></script>
   			<script src="js/main.js"></script>
 	</body>
 

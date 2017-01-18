@@ -8,19 +8,36 @@ headings: font-family: 'Raleway', sans-serif;
 logo: font-family: 'Dancing Script', cursive;
 */
 
+/*Add box-sizing: border-box; to everything */
+* { 
+    box-sizing: border-box;
+}
+
 html {
     font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font: 300 1em/1.8em 'Lato', Arial, Verdana, Tahoma, Sans-serif;
+    background: #fff;
+    letter-spacing: .03em;
 }
 
 /*this makes it 100%..0.5rem makes it half the size*/
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    padding-right: 10%; 
+    padding-left: 10%;
+    color: #666;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family: Raleway;
-    padding-right: 17%; 
-    padding-left: 17%;
+    padding-right: 10%;
+    padding-left: 10%;
     font-weight: lighter; 
 }
 
@@ -29,37 +46,31 @@ h1 {
     font-family: 'Satisfy', cursive;
     text-align: center;
     padding: 0px;
-    margin-top: 8%;
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 h4 {
     float: right;
+    font-size: 1.2rem;
 }
 
-h3 {
+h2, h3 {
     display: inline;
     font-size: 2rem;
 }
 
-h6 {
-    font-family: 'Satisfy', cursive;
-}
 
 h5 {
     font-size: 2rem;
 }
 
 img {
-    padding-right: 17%; 
-    padding-left: 17%;
+    padding-right: 10%; 
+    padding-left: 10%;
     width: 100%;
 } 
 
-p {
-    font-family: 'Playfair Display', serif;
-    padding-right: 17%; 
-    padding-left: 17%;
-}
 
 .here {
     color: 39,64,64;
@@ -71,7 +82,7 @@ p {
     position: fixed;
     width: 100%;
     font-family: Raleway;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     text-decoration: none;
     list-style: none;
@@ -80,6 +91,7 @@ p {
     color: rgb(255,255,255);
     padding-top: 13px;
     padding-bottom: 13px;
+    z-index: 10;
 }
 
 header {
@@ -92,10 +104,10 @@ footer {
     color: rgb(255,255,255);
     background-color: rgb(51,191,191);
     width:100%;
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-family: Raleway;
-    margin-top: 10%;
-    margin-bottom: 0px;
+    margin-top: 15%;
+    margin-bottom: -11px;
 }
 
 a {
@@ -106,16 +118,13 @@ a, a:visited {
     color: inherit;
 }
 
-aside {
-      width: 25%;
-      float: right;
-      padding-right: 6%;
+section {
+      width: 70%;
+      float: left;
 }
 
-
-/*Add box-sizing: border-box; to everything */
-* { 
-    box-sizing: border-box;
+section hr {
+    margin-left: 10%;
 }
 
 .contact {
@@ -125,35 +134,81 @@ aside {
     margin-right: 17%;
     margin-top: 5%;
     margin-bottom: 5%;
+    text-align: center;
 
 }
 
-.blogfeed img {
-
+.contact a {
+    color: rgb(51,191,191);
 }
+
 
 hr {
     color: #D2D2D2;
     border: solid thin #D2D2D2;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding-left: 10%;
 }
 
-section {
-    width: 75%;
-    float: left;
-    padding-right: none;
+
+/*ASIDE*/
+
+aside {
+      width: 30%;
+      float: right;
+      position: relative;
+      text-align: center;
+      padding-right: 7%;
 }
+
+aside img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+aside h6 {
+    font-family: 'Satisfy', cursive;
+    color: rgb(51,191,191);
+    font-size: 2.7rem;
+    margin: 0;
+    padding: 15px 0px 30px 0px;
+}
+
+
+.connect-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact-button {
+    width: 5rem;
+}
+
+/*ASIDE ENDS*/
+
+/*Slideshow*/
+.w3-content {
+    max-width: 80%;
+    margin: 15%;
+    margin-bottom: -55px;
+    margin-top: -20px;
+
+}
+/*Slideshow Ends*/
 
 /*Write Mobile CSS and wrap in media query*/
-@media (max-width: 481px) {
+@media (max-width: 850px) {
 
     aside {
         display: none;
     }
 
     h1 {
-        margin-top: 20%;
+        margin-top: 25%;
     }
 
     blockquote {
@@ -170,12 +225,40 @@ section {
 
     }
 
+    .contact p {
+        font-size: .8rem;
+        text-align: center;
+     }
+
+     .contact h2 {
+        font-size: 1.2rem;
+     }
+
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         width: 100%;
     }
 
+    h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    section {
+        width:100%;
+    }
+
+    .w3-content {
+    max-width: 100%;
+    margin: 0%;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
+
+}
+/*Media sizes ends**/
+
+
 
 
 
@@ -204,4 +287,14 @@ section {
 
 .clearfix:after {
     clear: both;
+
+.clear {
+  float: both;
+}
+
+.clearfix: after {
+  content: "";
+  display: table;
+  clear: both;
+}
 

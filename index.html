@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jacqueline Denise</title>
 
-
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family= Dancing+Script:700|Playfair+Display|Raleway:100i,200,300,400,500,500i,700|Satisfy" rel="stylesheet">
-        <script src="js/jquery-2.1.3.js"></script>
+        <link href="https://fonts.googleapis.com/css?family= Dancing+Script:700|Playfair+Display|Raleway:100i,200,300,400,500,500i,700|Satisfy|Lato:300,400" rel="stylesheet">
+        
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
@@ -17,11 +23,11 @@
     <header>
         <div class="clearfix">
         <nav class="navbar">
-            <a class="here" href="index.html">HOME</a>/
-            <a href="aboutme.html">ABOUT</a>/
-            <a href="health.html">HEALTH</a>/
-            <a href="travel.html">TRAVEL</a>/
-            <a href="lifestyle.html">LIFESTYLE</a>/
+            <a class="here" href="index.html">HOME</a> /
+            <a href="aboutme.html">ABOUT</a> /
+            <a href="health.html">HEALTH</a> /
+            <a href="travel.html">TRAVEL</a> /
+            <a href="lifestyle.html">LIFESTYLE</a> /
             <a href="contact.html">CONTACT</a>
         </nav>
     </header>
@@ -29,13 +35,19 @@
     <!-- Logo -->
     <h1>jacqueline denise</h1>
     
-    <!-- Scrolling Blog Image Feed -->
-        <!-- <h2>VIEWPOST</h2> -->
-        <!-- ^^add links to click through to blogposts -->
-        <!-- ^^add imgs to click through pictures -->
-        <div class="blogfeed">
-            <img src="img/blogfeed.JPG" alt="Blog Feed Images"> 
-        </div>
+<!-- Scrolling Blog Image Feed -->
+<div class="w3-content w3-display-container" style="max-width:95%">
+  <img class="mySlides" src="img/blogfeed2.jpg" style="width:100%">
+  <img class="mySlides" src="img/blogfeed1.jpg" style="width:100%">
+  <img class="mySlides" src="img/blogfeed3.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 
  
     <!--Footer-->
@@ -43,8 +55,11 @@
             <blockquote>COPYRIGHT © JACQUELINE DENISE GREAVU</blockquote>      
     </footer>       
     <!--Instagram Feed-->
-            <script type="text/javascript" src="path/to/instafeed.min.js"></script>
-            <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/312509" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+
+            <script src="js/vendor/jquery-1.11.2.min.js"></script>
             <script src="js/main.js"></script>
+
     </body>
 </html>
